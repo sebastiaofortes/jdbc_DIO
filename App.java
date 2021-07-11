@@ -14,5 +14,8 @@ public class App
 	dao.listar();
 	dao.deletar("teste");
 		
+		DAOavancada ava = new DAOavancada();
+	List <Usuarios> resultados = ava.listar();
+	System.out.println(resultados.get(0).email);	 
 	    }
 }
